@@ -6,9 +6,10 @@ table, th, td {
 }
 
 table {
+    font-family: "Lucida Console", "Courier New", monospace;
     background-color: darkgrey;
     text-shadow: 1px 1px 2px peru;
-    box-shadow: 5px 7px 3px;
+    box-shadow: 6px 8px 4px #8f8f8f;
 
 }
 

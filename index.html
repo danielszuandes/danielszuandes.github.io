@@ -1,21 +1,19 @@
 <html>
 	<head>
 		<title>Mel's Profile</title>
-		<link rel="stylesheet" href ="table.css">
+		<link rel="stylesheet" href="table.css">
+		<link rel="stylesheet" href="styles.css">
 	</head>
-
-	<body>
-		<h1>My Profile.</h1>
-		<h3>Student's Name:</h3>
-		<p>Daniel Zarabia.</p>
-		<h3>Student's Major:</h3>
+	<body class="back">
+		<h1 class="h1">My Profile.</h1>
+		<h3 class="p1">Student's Name:</h3>
+		<p id="doom">Daniel Zarabia.</p>
+		<h3 class="p2">Student's Major:</h3>
 		<p>Computer Science.</p>
-		<h3>Github Link:</h3>
+		<h3 class="p3">Github Link:</h3>
 		<p><a href="https://github.com/danielszuandes">Click Here...</a></p>
 		<h3>Personal Summary:</h3>
-		<p>Unfortunately, I enrolled in college because I wanted to be a gamedev.
-			In the years I've been here, I learned that Front-end Web Programming is just like
-			Programming in Ren'Py. As such, It seems I might have to live from visual novel revenue from now on. </p>
+		<p>Unfortunately, I enrolled in college because I wanted to be a gamedev. In the years I've been here, I learned that Front-end Web Programming is just like Programming in Ren'Py. As such, It seems I might have to live from visual novel revenue from now on. </p>
 		<table>
 			<tr>
 				<th>Skill</th>
@@ -58,8 +56,17 @@
 				<td>Native</td>
 			</tr>
 		</table>
-
-
+		<form>
+			<label for="item">Write something funny:</label>
+			<input type="text" id="item" name="labeln"> <br><br>
+			<input type="button" value="Submit" onclick="funnyButton()">
+		</form>
+		<script>
+			function funnyButton() {
+				var input = document.getElementById("item").value;
+				var doom = document.getElementById("doom");
+				doom.innerText = input;
+			}
+		</script>
 	</body>
-
 </html>
