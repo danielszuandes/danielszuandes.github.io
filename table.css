@@ -1,0 +1,17 @@
+table, th, td {
+    border: 2px solid black;
+    width: "100%";
+    padding: 7;
+}
+
+table {
+    background-color: darkgrey;
+}
+
+th {
+    background-color: antiquewhite;
+}
+
+td {
+    background-color: azure;
+}
