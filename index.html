@@ -2,15 +2,14 @@
 	<head>
 		<title>Mel's Profile</title>
 		<link rel="stylesheet" href="table.css">
-		<link rel="stylesheet" href="styles.css">
 	</head>
-	<body class="back">
-		<h1 class="h1">My Profile.</h1>
-		<h3 class="p1">Student's Name:</h3>
+	<body>
+		<h1>My Profile.</h1>
+		<h3>Student's Name:</h3>
 		<p id="doom">Daniel Zarabia.</p>
-		<h3 class="p2">Student's Major:</h3>
+		<h3>Student's Major:</h3>
 		<p>Computer Science.</p>
-		<h3 class="p3">Github Link:</h3>
+		<h3>Github Link:</h3>
 		<p><a href="https://github.com/danielszuandes">Click Here...</a></p>
 		<p> <a href="https://cuevana.biz/pelicula/497698/black-widow">Do not click here... (please)</a></p>
 		<h3>Personal Summary:</h3>
@@ -57,11 +56,13 @@
 				<td>Native</td>
 			</tr>
 		</table>
+		
 		<form>
 			<label for="item">Write something funny:</label>
 			<input type="text" id="item" name="labeln"> <br><br>
 			<input type="button" value="Submit" onclick="funnyButton()">
 		</form>
+		
 		<script>
 			function funnyButton() {
 				var input = document.getElementById("item").value;
