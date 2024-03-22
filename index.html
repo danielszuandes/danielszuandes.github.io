@@ -7,6 +7,7 @@
 	<body>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 		
+
 		<div class="container text-center">
 			<div class="container text-center">
 				<h1>My Profile.</h1>
@@ -74,18 +75,24 @@
 					</div>
 				</div>
 			</div>
-		<form>
-			<label for="item">Write something funny:</label>
-			<input type="text" id="item" name="labeln"> <br><br>
-			<input type="button" value="Submit" onclick="funnyButton()">
-		</form>
-		
+		<div class="container-fluid">
+			<div class="row justify-content-center">
+				<div class="col-md-7">
+					<form>
+						<label for="item">Write something funny:</label>
+						<input type="text" id="item" name="labeln"> <br><br>
+						<input type="button" value="Submit" onclick="funnyButton()">
+					</form>
+				</div>
+			</div>
+		</div>
 		<script>
 			function funnyButton() {
 				var input = document.getElementById("item").value;
 				var doom = document.getElementById("doom");
 				doom.innerText = input;
 			}
+
 		</script>
 	</body>
 </html>
